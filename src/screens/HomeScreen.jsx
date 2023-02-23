@@ -1,5 +1,6 @@
-import { View, StyleSheet } from "react-native"
+import { View, Image, StyleSheet } from "react-native"
 import { Text } from "react-native-paper"
+
 
 export const HomeScreen = () => {
 
@@ -9,6 +10,12 @@ export const HomeScreen = () => {
             <Text style={style.textoprincipal}>Bem vindo a tela principal</Text>
             <Text style={style.textoSecundario}>Este é um app para IMC, então sente-se e faça seus cálculos</Text>
 
+<Image
+   style={style.imagem}
+       source={{
+        uri: "https://i.ytimg.com/vi/xQPvwYMUwHI/maxresdefault.jpg"
+       }}
+       />
                
               
         </View>
@@ -18,21 +25,21 @@ export const HomeScreen = () => {
 const style = StyleSheet.create({
 
     textoprincipal: {
-        color: 'white',
+        color: 'black',
         textAlign: 'center',
         fontSize: '30px',
         marginTop: '20px'
     },
 
     textoSecundario: {
-        color: 'white',
+        color: 'black',
         textAlign: 'center',
         fontSize: '30px',       
         marginTop: '20px',
     },
 
     caixa: {
-        backgroundColor: 'purple',
+        backgroundColor: 'blue',
         display: 'flex',
         marginTop: '90px',
         marginLeft: '20px',
@@ -40,5 +47,13 @@ const style = StyleSheet.create({
         borderRadius: '20px',
 
     },  
+
+    imagem: {
+        height: "300px",
+        width: "600px",
+        marginLeft: "auto",
+        marginRight: "auto",
+
+    }
 
 })

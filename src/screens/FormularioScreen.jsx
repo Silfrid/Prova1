@@ -2,6 +2,7 @@ import { Text, View, StyleSheet, Image } from "react-native";
 import { Button, TextInput } from "react-native-paper";
 
 
+
 export default function Formulario2() {
 
 
@@ -13,22 +14,49 @@ export default function Formulario2() {
             <TextInput
                 label={'Peso(kg)'}
                 style={style.input}
-                
+
             />
             <Text style={style.info}>Coloque suas informações, cartão de crédito opcional</Text>
             <TextInput
                 label={'Altura(M)'}
-            
+
                 style={style.input}
             />
 
+            <Text style={style.info}>Cartão de crédito</Text>
+            <TextInput
+                label={'senha de trás do cartão'}
+
+                style={style.input}
+            />
+            <Text style={style.info}>Idade no qual usuário tem</Text>
+            <TextInput
+                label={'insira a idade'}
+
+                style={style.input}
+            />
+            <Text style={style.info}>beibi beibi do beibi?</Text>
+            <TextInput
+                label={'????????'}
+
+                style={style.input}
+            />
+            <Text style={style.info}>Número do Whatsapp, preferêncial da mãe</Text>
+            <TextInput
+                label={'NÃO É OPCIONAL'}
+
+                style={style.input}
+            />
+            
+
+
             <Button label='calcular'
-                style={{ marginTop: 15, width: 200, marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'purple' }}
+                style={{ marginTop: 15, width: 200, marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'blue' }}
                 icon='send'
                 mode='contained'
             >Bora calcula</Button>
 
- 
+
 
             <Text style={style.Result}>Resultado:</Text>
             <TextInput disabled style={style.Resultinput} />
@@ -36,7 +64,9 @@ export default function Formulario2() {
             <Image
                 source={{
                     uri: "https://picsum.photos/300/300",
+
                 }}
+
             />
 
         </View>
@@ -52,7 +82,8 @@ const style = StyleSheet.create({
         textAlign: 'center',
         color: 'black',
         marginTop: '50px',
-        fontSize: '30px'
+        fontSize: '30px',
+        fontWeight: 'bold',
     },
 
     input: {
@@ -87,7 +118,7 @@ const style = StyleSheet.create({
     info: {
         fontSize: '15px',
         marginTop: '10px',
-        backgroundColor: 'purple',
+        backgroundColor: 'blue',
         color: 'white',
         display: 'flex',
         borderRadius: '15px',
